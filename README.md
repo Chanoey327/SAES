@@ -7,7 +7,7 @@
 ```
 SAES
 ├──README.md               # 项目说明文档
-├──resource                # 测试结果图片
+├──resources               # 测试结果图片
 └──src/main/java
     ├── SAES.java          # S-DES算法核心实现类
     ├── SAESGui.java       # 图形用户界面类
@@ -26,20 +26,20 @@ SAES
 注：测试结果来源于测试类的运行结果和交叉测试运行结果，通过GUI进行操作得到的结果与测试类运行结果一致，这里没有一并展示。不过下文有关于GUI的描述和说明
 - 基本加/解密和交叉测试
   - 下面的图中上图为我方运行结果，下图为其他组运行结果（下图中密文结果应按列组合进行对比），可见加密结果相同
-  - ![alt text](resource/基本测试.png)
-  - ![alt text](resource/交叉测试结果.png)
+  - ![alt text](./resources/基本测试.png)
+  - ![alt text](./resources/交叉测试结果.png)
 - ASCII加/解密
   - 由于加密后的数字不一定能够对应ASCII范围，故密文保留16进制数字而没有对应为ASCII字符
-  - ![alt text](resource/ASCII加密.png)
+  - ![alt text](./resources/ASCII加密.png)
 - 双重加密
-  - ![alt text](resource/双重加密.png)
+  - ![alt text](./resources/双重加密.png)
 - 中间相遇攻击
   - 中间相遇攻击测试中直接使用了上面的双重加密的明密文对
-  - ![alt text](resource/中间相遇攻击.png)
+  - ![alt text](./resources/中间相遇攻击.png)
 - 三重加密
-  - ![alt text](resource/三重加密.png)
+  - ![alt text](./resources/三重加密.png)
 - CBC模式
-  - ![alt text](resource/CBC模式加密.png)
+  - ![alt text](./resources/CBC模式加密.png)
 
 
 
@@ -66,7 +66,7 @@ java -cp src/main/java SAESGui
 
 ### 界面布局
 GUI界面分为以下几个主要区域（见下图）：
-![alt text](resource/GUI界面.png)
+![GUI界面](./resources/GUI界面.png)
 
 1. **参数配置面板**（左上）
    - 操作类型选择下拉菜单
